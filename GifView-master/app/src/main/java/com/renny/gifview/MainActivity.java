@@ -8,8 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
-
-import com.renny.gifview.toast.ToastHelper;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
     GifImageView gifImageView;
@@ -35,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         gifImageView.setGifResource(R.drawable.dog, new GifImageView.OnPlayListener() {
             @Override
             public void onPlayStart() {
-                ToastHelper.getInstance(MainActivity.this.getApplication()).makeToast("开始");
+                Toast.makeText(MainActivity.this, "开始", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -48,20 +47,20 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
             @Override
             public void onPlayPause(boolean pauseSuccess) {
                 if (pauseSuccess)
-                    ToastHelper.getInstance(MainActivity.this.getApplication()).makeToast("暂停成功");
+                    Toast.makeText(MainActivity.this, "暂停成功", Toast.LENGTH_SHORT).show();
                 else {
-                    ToastHelper.getInstance(MainActivity.this.getApplication()).makeToast("暂停失败");
+                    Toast.makeText(MainActivity.this, "暂停失败", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onPlayRestart() {
-                ToastHelper.getInstance(MainActivity.this.getApplication()).makeToast("继续");
+                Toast.makeText(MainActivity.this, "继续", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onPlayEnd() {
-                ToastHelper.getInstance(MainActivity.this.getApplication()).makeToast("结束");
+                Toast.makeText(MainActivity.this, "结束", Toast.LENGTH_SHORT).show();
                 pauseBtn.setVisibility(View.GONE);
             }
         });
