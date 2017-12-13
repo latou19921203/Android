@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Maintenance_Demo1.0</string>
+
+    <string name="slide_1_title">This 1st Title</string>
+    <string name="slide_2_title">This 2nd Title</string>
+    <string name="slide_3_title">This 3rd Title</string>
+    <string name="slide_4_title">This 4th Title</string>
+    <string name="slide_1_details">This 1st Details.</string>
+    <string name="slide_2_details">This 2nd Details.</string>
+    <string name="slide_3_details" >This 3rd Details.</string>
+    <string name="slide_4_details">This 4th Details.</string>
+    <string name="tutorial_done">FIN</string>
+
+    <string name="navigation_item_title1">运行参数</string>
+    <string name="navigation_item_title2">巡检记录</string>
+    <string name="navigation_item_title3">故障分析</string>
+
+    <string name="insp_form_lab_text1">检查综合屏、直流屏、励磁屏、测温屏、公用LCU屏、厂用屏指示灯状态及仪表显示正常，触摸屏上各机组电流、电压、频率、温度、水位处于正常范围内，无报警。</string>
+    <string name="insp_form_lab_text2">发电机无异常振动,监视水轮机转动，过流部件无异物，无异常振动。</string>
+    <string name="insp_form_lab_text3">动力点轴承油槽无漏油和甩油现象，油位正常。</string>
+    <string name="insp_form_lab_text4">接力器无异常抽动，剪断销无剪断，管道、接头及阀门无渗漏，位移传感器和接力器机构无卡阻和异物，工作正常。</string>
+    <string name="insp_form_lab_text5">检查液压调速器压油装置油位、压力正常。阀门、油管无渗漏，监视油泵电机自动运行状态，检测调速器气罐安全阀状态。</string>
+    <string name="insp_form_lab_text6">检查液压调速器触摸屏显示导叶开度与当前负荷相对应，机组转速正常，面板显示与当前运行状态相符，触摸屏报警页面无报警。</string>
+    <string name="insp_form_lab_text7">机组运行中冷却水进出水阀均在打开位置，水压正常，无堵塞。</string>
+    <string name="insp_form_lab_text8">主阀及管路无渗漏，密封处无渗漏。</string>
+    <string name="insp_form_lab_text9">检查前池闸门控制柜上各指示灯状态正常。</string>
+    <string name="insp_form_lab_text10">中控系统通讯正常，实时监控各机组运行状态。</string>
+    <string name="insp_form_lab_text11">检查变压器油枕油位、油色；各阀门及法兰接头处不漏油；运行中油枕油位与温度相对应，油位和温度变化波动不大。</string>
+    <string name="insp_form_lab_text12">变压器套管外部清洁，无破损裂纹、无放电痕迹及其它异常现象。</string>
+    <string name="insp_form_lab_text13">变压器无异常，呼吸器完好，硅胶干燥，压力释放阀完好。引线接头无发热现象，外壳接地良好。</string>
+    <string name="insp_form_lab_text14">干式变压器的外部表面清洁无积污。</string>
+    <string name="insp_form_lab_text15">变压器中性点接地方式与运行方式相符。</string>
+    <string name="insp_form_lab_text16">检查开关柜断路器位置与实际运行情况相符。无异常声响，接头无过热变色现象。操作机构油压正常，各部件无裂痕、变形、锈蚀和松脱现象。各部位无电晕、异味。</string>
+    <string name="insp_form_lab_text17">断路器控制柜内各操作电源空开正确投入，各信号指示灯指示正确，位置状态指示正确，无报警信号。</string>
+    <string name="insp_form_lab_text18">避雷器无异常声音及振动现象。</string>
+</resources>

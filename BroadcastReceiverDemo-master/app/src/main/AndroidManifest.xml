@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zy.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="com.example.permission.receiver" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".NormalReceiver">
+            <intent-filter>
+                <action android:name="com.example.normal.receiver" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".OrderReceiver_1">
+            <intent-filter android:priority="100">
+                <action android:name="com.example.order.receiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".OrderReceiver_2">
+            <intent-filter android:priority="99">
+                <action android:name="com.example.order.receiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".OrderReceiver_3">
+            <intent-filter android:priority="98">
+                <action android:name="com.example.order.receiver" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".BroadcastService" />
+
+        <receiver android:name=".train.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".train.AppReceiver">
+            <intent-filter>
+                <!-- 安装应用 -->
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <!-- 更新应用 -->
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <!-- 卸载应用 -->
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <!-- 携带包名 -->
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".PermissionReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+    </application>
+
+</manifest>
