@@ -28,6 +28,5 @@ public class PickPictureAdapter extends CygAdapter<String> {
         } catch(IllegalArgumentException ex) {
             Log.wtf("Glide-tag", String.valueOf(imageView.getTag()));
         }
-
     }
 }

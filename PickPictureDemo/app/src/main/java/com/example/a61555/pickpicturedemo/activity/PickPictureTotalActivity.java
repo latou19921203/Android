@@ -54,6 +54,7 @@ public class PickPictureTotalActivity extends AppCompatActivity {
                 PickPictureActivity.gotoActivity(PickPictureTotalActivity.this, (ArrayList<String>) childList);
             }
         });
+        //动态获取权限
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
                 if (ContextCompat.checkSelfPermission(this, PERMISSION) == PackageManager.PERMISSION_DENIED) {
