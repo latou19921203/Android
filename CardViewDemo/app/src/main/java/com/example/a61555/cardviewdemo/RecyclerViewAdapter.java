@@ -1,6 +1,5 @@
 package com.example.a61555.cardviewdemo;
 
-
 import android.content.Context;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -10,10 +9,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import java.util.List;
 
 /**
- * Created by 61555 on 2017/7/18.
+ * Created by 61555 on 2017/12/25.
  */
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.CardViewDataHolder>{

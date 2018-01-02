@@ -5,8 +5,7 @@ import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
 /**
- * 用于获取屏幕大小
- * Created by 61555 on 2017/8/7.
+ * Created by 61555 on 2017/12/25.
  */
 
 public class ScreenUtils {
@@ -17,15 +16,15 @@ public class ScreenUtils {
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics dm = new DisplayMetrics();
         wm.getDefaultDisplay().getMetrics(dm);
-        //屏幕宽度算法:屏幕宽度（像素）/屏幕密度  
-        return  (int) (dm.widthPixels/dm.density);//屏幕宽度(dp)  
+        //屏幕宽度算法:屏幕宽度（像素）/屏幕密度
+        return  (int) (dm.widthPixels/dm.density);//屏幕宽度(dp)
     }
 
     public static int getScreenHeight(Context context) {
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics dm = new DisplayMetrics();
         wm.getDefaultDisplay().getMetrics(dm);
-        //屏幕宽度算法:屏幕宽度（像素）/屏幕密度  
+        //屏幕宽度算法:屏幕宽度（像素）/屏幕密度
         return (int)(dm.heightPixels/dm.density);//屏幕高度(dp)
     }
 
@@ -33,7 +32,7 @@ public class ScreenUtils {
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics dm = new DisplayMetrics();
         wm.getDefaultDisplay().getMetrics(dm);
-        return dm.densityDpi;//屏幕密度dpi（120 / 160 / 240）
+        return dm.densityDpi;//屏幕密度dpi（120 / 160 / 240）
     }
 
     /**

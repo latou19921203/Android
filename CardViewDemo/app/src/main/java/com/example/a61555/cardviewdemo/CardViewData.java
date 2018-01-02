@@ -3,10 +3,10 @@ package com.example.a61555.cardviewdemo;
 import java.io.Serializable;
 
 /**
- * Created by 61555 on 2017/7/18.
+ * Created by 61555 on 2017/12/25.
  */
 
-public class CardViewData implements Serializable{
+public class CardViewData implements Serializable {
 
     private String title;
     private String subhead;

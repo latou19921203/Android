@@ -6,11 +6,6 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-/**
- *  需引入
- *  com.android.support:cardview-v7:x.x.x
-    com.android.support:recyclerview-v7:x.x.x
- */
 public class MainActivity extends AppCompatActivity {
 
     @Override
