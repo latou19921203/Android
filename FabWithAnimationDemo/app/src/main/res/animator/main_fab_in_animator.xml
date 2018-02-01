@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <objectAnimator xmlns:androd="http://schemas.android.com/apk/res/android"
+        androd:duration="500"
+        androd:propertyName="translationY"
+        androd:valueFrom="220"
+        androd:valueTo="0"
+        androd:repeatMode="reverse"
+        androd:repeatCount="0">
+    </objectAnimator>
+</set>

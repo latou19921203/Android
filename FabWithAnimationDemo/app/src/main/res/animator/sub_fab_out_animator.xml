@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator xmlns:androd="http://schemas.android.com/apk/res/android"
+        androd:duration="250"
+        androd:propertyName="translationY"
+        androd:valueFrom="-78"
+        androd:valueTo="0"
+        androd:repeatMode="reverse"
+        androd:repeatCount="0">
+    </objectAnimator>
+    <objectAnimator xmlns:androd="http://schemas.android.com/apk/res/android"
+        androd:duration="250"
+        androd:propertyName="alpha"
+        androd:valueFrom="1"
+        androd:valueTo="0"
+        androd:valueType="floatType">
+    </objectAnimator>
+</set>

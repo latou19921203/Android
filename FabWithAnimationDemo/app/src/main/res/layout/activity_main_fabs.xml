@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/activity_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:layout_marginEnd="32dp"
+        android:alpha="0"
+        android:clickable="false"
+        android:src="@drawable/ic_inner_fab"
+        app:backgroundTint="@color/colorAccent"
+        app:borderWidth="0dp"
+        app:elevation="4dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:pressedTranslationZ="2dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:alpha="0"
+        android:clickable="false"
+        android:src="@drawable/ic_inner_fab"
+        app:backgroundTint="@color/colorAccent"
+        app:borderWidth="0dp"
+        app:elevation="4dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fab1"
+        app:layout_constraintEnd_toEndOf="@+id/fab1"
+        app:pressedTranslationZ="2dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:alpha="0"
+        android:clickable="false"
+        android:src="@drawable/ic_inner_fab"
+        app:backgroundTint="@color/colorAccent"
+        app:borderWidth="0dp"
+        app:elevation="4dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fab2"
+        app:layout_constraintEnd_toEndOf="@+id/fab2"
+        app:pressedTranslationZ="2dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:alpha="0"
+        android:clickable="false"
+        android:src="@drawable/ic_inner_fab"
+        app:backgroundTint="@color/colorAccent"
+        app:borderWidth="0dp"
+        app:elevation="4dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fab3"
+        app:layout_constraintEnd_toEndOf="@+id/fab3"
+        app:pressedTranslationZ="2dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/main_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        android:src="@drawable/ic_inner_fab"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:borderWidth="0dp"
+        app:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:pressedTranslationZ="2dp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        android:background="@drawable/text_border"
+        android:text="text1"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fab1"
+        app:layout_constraintEnd_toStartOf="@+id/fab1"
+        app:layout_constraintTop_toTopOf="@+id/fab1" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        android:background="@drawable/text_border"
+        android:text="text2"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fab2"
+        app:layout_constraintEnd_toStartOf="@+id/fab2"
+        app:layout_constraintTop_toTopOf="@+id/fab2" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        android:background="@drawable/text_border"
+        android:text="text3"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fab3"
+        app:layout_constraintEnd_toStartOf="@+id/fab3"
+        app:layout_constraintTop_toTopOf="@+id/fab3" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        android:background="@drawable/text_border"
+        android:text="text4"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fab4"
+        app:layout_constraintEnd_toStartOf="@+id/fab4"
+        app:layout_constraintTop_toTopOf="@+id/fab4" />
+
+</android.support.constraint.ConstraintLayout>
